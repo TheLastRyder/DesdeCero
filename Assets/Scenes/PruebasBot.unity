@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 61484905}
   - component: {fileID: 61484908}
   - component: {fileID: 61484909}
+  - component: {fileID: 61484910}
+  - component: {fileID: 61484911}
   m_Layer: 9
   m_Name: ShipOmniHD
   m_TagString: Enemy
@@ -318,9 +320,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2201eb8e36095e94ba18a5ed4530a340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
-  puntos:
-  - {fileID: 815648497}
+  speed: 5
+  despawnTime: 2
+  movementType: 0
+  amplitude: 2
+  frequency: 2
+  pauseTime: 2
+  stopPositionsY:
+  - 0.5
+  playerTransform: {fileID: 0}
+--- !u!114 &61484910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61484903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2201eb8e36095e94ba18a5ed4530a340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  despawnTime: 2
+  movementType: 0
+  amplitude: 2
+  frequency: 2
+  pauseTime: 2
+  stopPositionsY:
+  - 0.5
+  playerTransform: {fileID: 0}
+--- !u!114 &61484911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61484903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2201eb8e36095e94ba18a5ed4530a340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  despawnTime: 2
+  movementType: 0
+  amplitude: 2
+  frequency: 2
+  pauseTime: 2
+  stopPositionsY:
+  - 0.5
+  playerTransform: {fileID: 0}
 --- !u!1 &124819562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,6 +2128,7 @@ GameObject:
   - component: {fileID: 1842947232}
   - component: {fileID: 1842947231}
   - component: {fileID: 1842947230}
+  - component: {fileID: 1842947235}
   m_Layer: 9
   m_Name: ShipOmniHD (1)
   m_TagString: Enemy
@@ -2113,9 +2164,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2201eb8e36095e94ba18a5ed4530a340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
-  puntos:
-  - {fileID: 1727938081}
+  speed: 5
+  despawnTime: 2
+  movementType: 0
+  amplitude: 2
+  frequency: 2
+  pauseTime: 2
+  stopPositionsY:
+  - 0.5
+  playerTransform: {fileID: 0}
 --- !u!114 &1842947231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2263,6 +2320,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1842947235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842947228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2201eb8e36095e94ba18a5ed4530a340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  despawnTime: 2
+  movementType: 0
+  amplitude: 2
+  frequency: 2
+  pauseTime: 2
+  stopPositionsY:
+  - 0.5
+  playerTransform: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
